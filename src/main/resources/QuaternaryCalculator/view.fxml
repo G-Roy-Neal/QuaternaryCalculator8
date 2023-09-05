@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="QuaternaryCalculator.HelloController">
+    <HBox spacing="20.0">
+        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="button0"/>
+        <Button text="0" onAction="#onButton0Click"/>
+
+        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="button1"/>
+        <Button text="1" onAction="#onButton1Click"/>
+
+        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="button2"/>
+        <Button text="2" onAction="#onButton2Click"/>
+
+        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="button3"/>
+        <Button text="3" onAction="#onButton3Click"/>
+    </HBox>
+
+    <HBox spacing="20.0">
+        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="buttonPlus"/>
+        <Button text="+" onAction="#onButton0Click"/>
+
+        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="buttonMinus"/>
+        <Button text="-" onAction="#onButton1Click"/>
+
+        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="buttonMultiply"/>
+        <Button text="x" onAction="#onButton2Click"/>
+
+        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="buttonDivide"/>
+        <Button text="÷" onAction="#onButton3Click"/>
+    </HBox>
+</VBox>
+
