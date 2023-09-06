@@ -7,8 +7,14 @@ import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
 
 public class CalculatorTests {
+
     @Test
-    public void testConvertToQ() {
+    public void checkFiveWorks() {
+        Integer res = Calculator.quartToDec(-11);
+        assertEquals(res, Integer.valueOf(-5) );
+    }
+    @Test
+    public void testConvertToFromQ() {
         ArrayList<Integer> decValues = new ArrayList<>();
         ArrayList<Integer> qValues = new ArrayList<>();
         decValues.add(5);
@@ -31,7 +37,7 @@ public class CalculatorTests {
 
         for (int i = 0; i < decValues.size(); i++){
             assertEquals(Calculator.decToQuart(decValues.get(i)), qValues.get(i));
-
+            assertEquals(decValues.get(i), Calculator.quartToDec(qValues.get(i)));
         }
 
     }
