@@ -6,6 +6,33 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Calculator {
+    public static Integer calculate(int quartNumber, String operand) {
+        switch (operand) {
+            case "square":
+                return square(quartNumber);
+            case "sqroot":
+                return sqroot(quartNumber);
+            default:
+                System.out.println("error");
+                return null;
+        }
+    }
+    public static Integer calculate(int quartNumber, String operand, int quartNumber2) {
+        switch (operand) {
+            case "add":
+                return add(quartNumber, quartNumber2);
+            case "sub":
+                return sub(quartNumber, quartNumber2);
+            case "mul":
+                return mult(quartNumber, quartNumber2);
+            case "div":
+                return div(quartNumber, quartNumber2);
+            default:
+                System.out.println("error");
+                return null;
+        }
+    }
+
     public static Integer decToQuart(int decimalNumber) {
         List<String> quartList = new ArrayList<>();
         boolean negative = false;
@@ -28,7 +55,7 @@ public class Calculator {
         }
     }
 
-    public static Integer quartToDec(Integer quartNumber) {
+    public static Integer quartToDec(int quartNumber) {
         LinkedList<Integer> stack = new LinkedList<>();
         List<Integer> addList = new ArrayList<>();
         int total = 0;
