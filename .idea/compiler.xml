@@ -3,4 +3,9 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="16" />
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="QuaternaryCalculator.main" options="--add-exports org.junit.jupiter.params/org.junit.jupiter=QuaternaryCalculator" />
+    </option>
+  </component>
 </project>
