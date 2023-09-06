@@ -6,12 +6,7 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Tests {
-    @Test
-    public void sanityCheck() {
-        assertEquals(1, 1);
-
-    }
+public class CalculatorTests {
     @Test
     public void testConvertToQ() {
         ArrayList<Integer> decValues = new ArrayList<>();
