@@ -55,7 +55,7 @@ public class Calculator {
         }
     }
 
-    private static Integer quartToDec(int quartNumber) {
+    public static Integer quartToDec(int quartNumber) {
         LinkedList<Integer> stack = new LinkedList<>();
         List<Integer> addList = new ArrayList<>();
         int total = 0;

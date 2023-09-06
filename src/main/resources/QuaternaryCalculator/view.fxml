@@ -9,6 +9,15 @@
 <VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="QuaternaryCalculator.HelloController">
     <HBox spacing="20.0">
+        <padding> <Insets bottom="20.0" left="80.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="TopLabel"/>
+
+        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="toggleButton"/>
+        <Button text="tog" onAction="#onButtonToggleClick"/>
+    </HBox>
+
+    <HBox spacing="20.0">
         <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
         <Label fx:id="button0"/>
         <Button text="0" onAction="#onButton0Click"/>
@@ -29,19 +38,37 @@
     <HBox spacing="20.0">
         <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
         <Label fx:id="buttonPlus"/>
-        <Button text="+" onAction="#onButton0Click"/>
+        <Button text="+" onAction="#onButtonPlusClick"/>
 
         <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
         <Label fx:id="buttonMinus"/>
-        <Button text="-" onAction="#onButton1Click"/>
+        <Button text="-" onAction="#onButtonMinusClick"/>
 
         <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
         <Label fx:id="buttonMultiply"/>
-        <Button text="x" onAction="#onButton2Click"/>
+        <Button text="x" onAction="#onButtonMultiplyClick"/>
 
         <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
         <Label fx:id="buttonDivide"/>
-        <Button text="÷" onAction="#onButton3Click"/>
+        <Button text="÷" onAction="#onButtonDivideClick"/>
+    </HBox>
+
+    <HBox spacing="20.0">
+        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="buttonSqroot"/>
+        <Button text="sqrt" onAction="#onButtonSqrootClick"/>
+
+        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="buttonSquare"/>
+        <Button text="sq" onAction="#onButtonSquareClick"/>
+
+        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="buttonClear"/>
+        <Button text="C" onAction="#onButtonClearClick"/>
+
+        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
+        <Label fx:id="buttonEquals"/>
+        <Button text="=" onAction="#onButtonEqualsClick"/>
     </HBox>
 </VBox>
 
