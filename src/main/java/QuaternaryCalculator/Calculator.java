@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Calculator {
-    private static Integer decToQuart(int decimalNumber) {
+    public static Integer decToQuart(int decimalNumber) {
         List<String> quartList = new ArrayList<>();
         boolean negative = false;
         if (decimalNumber < 0) {
