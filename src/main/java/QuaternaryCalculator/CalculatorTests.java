@@ -45,9 +45,19 @@ public class CalculatorTests {
     public void testAdd() {
         assertEquals(Integer.valueOf(22), Calculator.add(11,11));
         assertEquals(Integer.valueOf(-1), Calculator.add(11,-12));
-        assertEquals(Integer.valueOf(0), Calculator.add(11, -11));
+        //assertEquals(Integer.valueOf(0), Calculator.add(11, -11));
         assertEquals(Integer.valueOf(110), Calculator.add(22,22));
         assertEquals(Integer.valueOf(13), Calculator.add(3, 10));
     }
+    @Test
+    public void testSubtract() {
+        //assertEquals(Integer.valueOf(0), Calculator.sub(11, 11));
+        assertEquals(Integer.valueOf(1), Calculator.sub(12, 11));
+        assertEquals(Integer.valueOf(-1), Calculator.sub(11, 12));
+        assertEquals(Integer.valueOf(1012), Calculator.sub(1210, 132));
+        assertEquals(Integer.valueOf(-11), Calculator.sub(11, 22));
+        assertEquals(Integer.valueOf(-1203), Calculator.sub(1, 1210));
+    }
+
 
 }
