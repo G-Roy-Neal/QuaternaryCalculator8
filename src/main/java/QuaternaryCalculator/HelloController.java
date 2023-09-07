@@ -3,10 +3,11 @@ package QuaternaryCalculator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class HelloController {
     @FXML
-    private Label TopLabel = new Label("");
+    private TextField TopLabel = new TextField("");
     @FXML
     private Label TypeLabel = new Label("qrt");
 
