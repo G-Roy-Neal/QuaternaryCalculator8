@@ -80,6 +80,16 @@ public class CalculatorTests {
     @Test
     public void testSqrt() {
         assertEquals(Integer.valueOf(2), Calculator.sqroot(11));
+        assertEquals(Integer.valueOf(1), Calculator.sqroot(3));
+        assertEquals(Integer.valueOf(1), Calculator.sqroot(2));
+        assertEquals(Integer.valueOf(2), Calculator.sqroot(12));
     }
 
+    @Test
+    public void testSq() {
+        assertEquals(Integer.valueOf(10), Calculator.square(2));
+        assertEquals(Integer.valueOf(21), Calculator.square(3));
+        assertEquals(Integer.valueOf(210), Calculator.square(12));
+        assertEquals(Integer.valueOf(1210), Calculator.square(22));
+    }
 }
