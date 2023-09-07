@@ -6,9 +6,9 @@ import javafx.scene.control.Label;
 
 public class HelloController {
     @FXML
-    private final Label TopLabel = new Label("");
+    private Label TopLabel = new Label("");
     @FXML
-    private final Label TypeLabel = new Label("qrt");
+    private Label TypeLabel = new Label("qrt");
 
     int quartNumber1 = 0;
     String labelNumber = "";
