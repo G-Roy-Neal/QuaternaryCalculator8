@@ -58,6 +58,12 @@ public class Calculator {
     public static Integer quartToDec(int quartNumber) {
         LinkedList<Integer> stack = new LinkedList<>();
         List<Integer> addList = new ArrayList<>();
+        boolean negative = false;
+        if (quartNumber < 0) {
+            negative = true;
+            quartNumber = Math.abs(quartNumber);
+        }
+
         int total = 0;
         while (quartNumber > 0) {
             stack.push( quartNumber % 10 );
@@ -72,7 +78,12 @@ public class Calculator {
             total = total + integer;
         }
 
-        return total;
+        if (negative) {
+            return (-1)*total;
+        }
+        else {
+            return total;
+        }
     }
 
     public static Integer add(int quart1, int quart2) {
