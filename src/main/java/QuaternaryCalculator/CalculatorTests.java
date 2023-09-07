@@ -39,7 +39,15 @@ public class CalculatorTests {
             assertEquals(Calculator.decToQuart(decValues.get(i)), qValues.get(i));
             assertEquals(decValues.get(i), Calculator.quartToDec(qValues.get(i)));
         }
+    }
 
+    @Test
+    public void testAdd() {
+        assertEquals(Integer.valueOf(22), Calculator.add(11,11));
+        assertEquals(Integer.valueOf(-1), Calculator.add(11,-12));
+        assertEquals(Integer.valueOf(0), Calculator.add(11, -11));
+        assertEquals(Integer.valueOf(110), Calculator.add(22,22));
+        assertEquals(Integer.valueOf(13), Calculator.add(3, 10));
     }
 
 }
