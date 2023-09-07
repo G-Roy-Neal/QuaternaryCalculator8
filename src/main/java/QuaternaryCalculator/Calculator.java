@@ -47,7 +47,10 @@ public class Calculator {
         }
         Collections.reverse(quartList);
 
-        if (negative) {
+        if (quartList.size() == 0) {
+            return 0;
+        }
+        else if (negative) {
             return (-1)*Integer.parseInt(String.join("", quartList));
         }
         else {
