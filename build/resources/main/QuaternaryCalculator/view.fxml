@@ -1,77 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.layout.HBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="QuaternaryCalculator.HelloController">
-    <HBox spacing="20.0">
-        <padding> <Insets bottom="20.0" left="80.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="TopLabel"/>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 
-        <padding> <Insets bottom="20.0" left="80.0" right="5.0" top="20.0"/> </padding>
-        <Label fx:id="TypeLabel" text="qrt"/>
-
-        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="toggleButton"/>
-        <Button text="tog" onAction="#onButtonToggleClick"/>
-    </HBox>
-
-    <HBox spacing="20.0">
-        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="button0"/>
-        <Button text="0" onAction="#onButton0Click"/>
-
-        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="button1"/>
-        <Button text="1" onAction="#onButton1Click"/>
-
-        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="button2"/>
-        <Button text="2" onAction="#onButton2Click"/>
-
-        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="button3"/>
-        <Button text="3" onAction="#onButton3Click"/>
-    </HBox>
-
-    <HBox spacing="20.0">
-        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="buttonPlus"/>
-        <Button text="+" onAction="#onButtonPlusClick"/>
-
-        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="buttonMinus"/>
-        <Button text="-" onAction="#onButtonMinusClick"/>
-
-        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="buttonMultiply"/>
-        <Button text="x" onAction="#onButtonMultiplyClick"/>
-
-        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="buttonDivide"/>
-        <Button text="÷" onAction="#onButtonDivideClick"/>
-    </HBox>
-
-    <HBox spacing="20.0">
-        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="buttonSqroot"/>
-        <Button text="sqrt" onAction="#onButtonSqrootClick"/>
-
-        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="buttonSquare"/>
-        <Button text="sq" onAction="#onButtonSquareClick"/>
-
-        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="buttonClear"/>
-        <Button text="C" onAction="#onButtonClearClick"/>
-
-        <padding> <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/> </padding>
-        <Label fx:id="buttonEquals"/>
-        <Button text="=" onAction="#onButtonEqualsClick"/>
-    </HBox>
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: cyan;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="QuaternaryCalculator.HelloController">
+   <GridPane alignment="CENTER" prefHeight="165.0" prefWidth="294.0" VBox.vgrow="ALWAYS">
+     <columnConstraints>
+         <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+     </rowConstraints>
+      <children>
+           <Label fx:id="TypeLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: tan;" text="qrt" GridPane.columnIndex="2" />
+           <Button alignment="CENTER" onAction="#onButtonToggleClick" prefHeight="500.0" prefWidth="500.0" style="-fx-font-style: bold;" text="tog" GridPane.columnIndex="3" />
+           <Label fx:id="TopLabel" prefHeight="500.0" prefWidth="500.0" GridPane.columnIndex="1" />
+           <Button onAction="#onButton3Click" prefHeight="500.0" prefWidth="500.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+           <Button onAction="#onButton2Click" prefHeight="500.0" prefWidth="500.0" text="2" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+           <Button onAction="#onButton1Click" prefHeight="500.0" prefWidth="500.0" text="1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+           <Button onAction="#onButton0Click" prefHeight="500.0" prefWidth="500.0" text="0" GridPane.rowIndex="1" />
+           <Button onAction="#onButtonPlusClick" prefHeight="500.0" prefWidth="500.0" text="+" GridPane.rowIndex="2" />
+           <Button onAction="#onButtonSqrootClick" prefHeight="500.0" prefWidth="500.0" text="sqrt" GridPane.rowIndex="3" />
+           <Button onAction="#onButtonSquareClick" prefHeight="500.0" prefWidth="500.0" text="sq" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+           <Button onAction="#onButtonClearClick" prefHeight="500.0" prefWidth="500.0" text="C" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+           <Button onAction="#onButtonEqualsClick" prefHeight="500.0" prefWidth="500.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+           <Button onAction="#onButtonMinusClick" prefHeight="500.0" prefWidth="500.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+           <Button onAction="#onButtonMultiplyClick" prefHeight="500.0" prefWidth="500.0" text="x" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+           <Button onAction="#onButtonDivideClick" prefHeight="500.0" prefWidth="500.0" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         <TextField prefHeight="500.0" prefWidth="500.0">
+            <GridPane.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </GridPane.margin>
+         </TextField>
+      </children>
+   </GridPane>
+   <effect>
+      <SepiaTone />
+   </effect>
 </VBox>
-
