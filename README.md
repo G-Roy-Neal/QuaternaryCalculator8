@@ -7,6 +7,10 @@
   - After navigating to here, you can run the calculator by pressing
   the green arrow next to the public class.
 
+## Additonal dependencies
+  - JavaFX
+  - Scene Builder
+
 ## Task distribution
   - Dawson Vaal = Logic
   - Gavin Neal = GUI
@@ -28,9 +32,11 @@
     wrapped up before the deadline.
   
 ## Screenshots 
-  - ![CalcWithCode](https://github.com/G-Roy-Neal/QuaternaryCalculator8/assets/112365149/16087daa-25d5-4c9d-9105-2d6f975dd315)
+  - ![CalcWithCode](https://github.com/G-Roy-Neal/QuaternaryCalculator8/assets/112365149/6889fa48-24a2-4df7-9f46-a48d7fb1191b)
 
-  - ![FullScreenCalc](https://github.com/G-Roy-Neal/QuaternaryCalculator8/assets/112365149/c6fd6c42-e013-48bd-855b-074d166aa376)
+
+  - ![FullScreenCalc](https://github.com/G-Roy-Neal/QuaternaryCalculator8/assets/112365149/5a58ce94-19b0-4cc6-9885-df1c0b11fe0a)
+
 
 
 
