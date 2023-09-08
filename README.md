@@ -5,7 +5,7 @@
   - Use which ever IDE of your chosing, and open the project.
   - Proceed to main -> java -> QuaternaryCalculator -> CalculatorGUI
   - After navigating to here, you can run the calculator by pressing
-  the green arrow next to the public class
+  the green arrow next to the public class.
 
 ## Task distribution
   - Dawson Vaal = Logic
@@ -28,7 +28,11 @@
     wrapped up before the deadline.
   
 ## Screenshots 
-  - 
+  - ![CalcWithCode](https://github.com/G-Roy-Neal/QuaternaryCalculator8/assets/112365149/16087daa-25d5-4c9d-9105-2d6f975dd315)
+
+  - ![FullScreenCalc](https://github.com/G-Roy-Neal/QuaternaryCalculator8/assets/112365149/c6fd6c42-e013-48bd-855b-074d166aa376)
+
+
 
 ### Team members
   - Dawson Vaal, Gavin Neal, Ryan Martinez, Tommy Nguyen, Justyn Fox
