@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: cyan;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuaternaryCalculator.HelloController">
    <GridPane alignment="CENTER" prefHeight="165.0" prefWidth="294.0" VBox.vgrow="ALWAYS">
@@ -25,27 +26,72 @@
          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
      </rowConstraints>
       <children>
-           <Label fx:id="TypeLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: tan;" text="qrt" GridPane.columnIndex="2" />
-           <Button alignment="CENTER" onAction="#onButtonToggleClick" prefHeight="500.0" prefWidth="500.0" text="tog" GridPane.columnIndex="3" />
-           <TextField fx:id="TopLabel" prefHeight="500.0" prefWidth="500.0" GridPane.columnIndex="1">
-            <GridPane.margin>
-               <Insets bottom="5.0" left="-100.0" right="5.0" top="5.0" />
-            </GridPane.margin>
+           <Label fx:id="TypeLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: tan;" text="qrt" GridPane.columnIndex="2">
+            <font>
+               <Font size="16.0" />
+            </font></Label>
+           <Button alignment="CENTER" contentDisplay="CENTER" onAction="#onButtonToggleClick" prefHeight="500.0" prefWidth="500.0" text="tog" GridPane.columnIndex="3">
+            <font>
+               <Font size="16.0" />
+            </font></Button>
+           <TextField fx:id="TopLabel" alignment="CENTER_RIGHT" prefHeight="500.0" prefWidth="500.0" GridPane.columnIndex="1">
             <padding>
                <Insets left="5.0" />
-            </padding></TextField>
-           <Button onAction="#onButton3Click" prefHeight="500.0" prefWidth="500.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-           <Button onAction="#onButton2Click" prefHeight="500.0" prefWidth="500.0" text="2" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-           <Button onAction="#onButton1Click" prefHeight="500.0" prefWidth="500.0" text="1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-           <Button onAction="#onButton0Click" prefHeight="500.0" prefWidth="500.0" text="0" GridPane.rowIndex="1" />
-           <Button onAction="#onButtonPlusClick" prefHeight="500.0" prefWidth="500.0" text="+" GridPane.rowIndex="2" />
-           <Button onAction="#onButtonSqrootClick" prefHeight="500.0" prefWidth="500.0" text="sqrt" GridPane.rowIndex="3" />
-           <Button onAction="#onButtonSquareClick" prefHeight="500.0" prefWidth="500.0" text="sq" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-           <Button onAction="#onButtonClearClick" prefHeight="500.0" prefWidth="500.0" text="C" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-           <Button onAction="#onButtonEqualsClick" prefHeight="500.0" prefWidth="500.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-           <Button onAction="#onButtonMinusClick" prefHeight="500.0" prefWidth="500.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-           <Button onAction="#onButtonMultiplyClick" prefHeight="500.0" prefWidth="500.0" text="x" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-           <Button onAction="#onButtonDivideClick" prefHeight="500.0" prefWidth="500.0" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            </padding>
+            <GridPane.margin>
+               <Insets bottom="5.0" left="-70.0" right="5.0" top="5.0" />
+            </GridPane.margin>
+            <font>
+               <Font size="16.0" />
+            </font></TextField>
+           <Button alignment="CENTER" contentDisplay="CENTER" onAction="#onButton3Click" prefHeight="500.0" prefWidth="500.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <font>
+               <Font size="16.0" />
+            </font></Button>
+           <Button alignment="CENTER" contentDisplay="CENTER" onAction="#onButton2Click" prefHeight="500.0" prefWidth="500.0" text="2" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <font>
+               <Font size="16.0" />
+            </font></Button>
+           <Button alignment="CENTER" contentDisplay="CENTER" onAction="#onButton1Click" prefHeight="500.0" prefWidth="500.0" text="1" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <font>
+               <Font size="16.0" />
+            </font></Button>
+           <Button alignment="CENTER" contentDisplay="CENTER" onAction="#onButton0Click" prefHeight="500.0" prefWidth="500.0" text="0" GridPane.rowIndex="1">
+            <font>
+               <Font size="16.0" />
+            </font></Button>
+           <Button alignment="CENTER" contentDisplay="CENTER" onAction="#onButtonPlusClick" prefHeight="500.0" prefWidth="500.0" text="+" GridPane.rowIndex="2">
+            <font>
+               <Font size="20.0" />
+            </font></Button>
+           <Button alignment="CENTER" contentDisplay="CENTER" onAction="#onButtonSqrootClick" prefHeight="500.0" prefWidth="500.0" text="sqrt" GridPane.rowIndex="3">
+            <font>
+               <Font size="16.0" />
+            </font></Button>
+           <Button alignment="CENTER" contentDisplay="CENTER" onAction="#onButtonSquareClick" prefHeight="500.0" prefWidth="500.0" text="sq" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <font>
+               <Font size="16.0" />
+            </font></Button>
+           <Button alignment="CENTER" contentDisplay="CENTER" onAction="#onButtonClearClick" prefHeight="500.0" prefWidth="500.0" text="C" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <font>
+               <Font size="18.0" />
+            </font></Button>
+           <Button alignment="CENTER" contentDisplay="CENTER" onAction="#onButtonEqualsClick" prefHeight="500.0" prefWidth="500.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <font>
+               <Font size="18.0" />
+            </font></Button>
+           <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" onAction="#onButtonMinusClick" prefHeight="500.0" prefWidth="500.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <font>
+               <Font size="20.0" />
+            </font></Button>
+           <Button alignment="CENTER" contentDisplay="CENTER" onAction="#onButtonMultiplyClick" prefHeight="500.0" prefWidth="500.0" text="x" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <font>
+               <Font size="20.0" />
+            </font></Button>
+           <Button alignment="CENTER" contentDisplay="CENTER" onAction="#onButtonDivideClick" prefHeight="500.0" prefWidth="500.0" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <font>
+               <Font size="20.0" />
+            </font></Button>
       </children>
    </GridPane>
    <effect>

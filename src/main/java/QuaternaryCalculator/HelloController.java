@@ -20,8 +20,8 @@ public class HelloController {
 
 //Resets the label to blank
     private void resetLabel() {
-        TopLabel.setText("");
-        labelNumber = "";
+        TopLabel.setText("0");
+        labelNumber = "0";
     }
 //Holds the first number in the label until an operand is clicked
     private void clickedFlip() {
@@ -91,35 +91,36 @@ public class HelloController {
 
 //-------------2nd Row-------------------------
     public void onButtonPlusClick(ActionEvent actionEvent) {
+        switchToQuart();
         quartNumber1 = Integer.parseInt(TopLabel.getText());
         operand = "add";
         operandClicked = true;
-        switchToQuart();
     }
 
     public void onButtonMinusClick(ActionEvent actionEvent) {
+        switchToQuart();
         quartNumber1 = Integer.parseInt(TopLabel.getText());
         operand = "sub";
         operandClicked = true;
-        switchToQuart();
     }
 
     public void onButtonMultiplyClick(ActionEvent actionEvent) {
+        switchToQuart();
         quartNumber1 = Integer.parseInt(TopLabel.getText());
         operand = "mul";
         operandClicked = true;
-        switchToQuart();
     }
 
     public void onButtonDivideClick(ActionEvent actionEvent) {
+        switchToQuart();
         quartNumber1 = Integer.parseInt(TopLabel.getText());
         operand = "div";
         operandClicked = true;
-        switchToQuart();
     }
 
 //-------------3rd Row-------------------------
     public void onButtonEqualsClick(ActionEvent actionEvent) {
+        switchToQuart();
         int result = Calculator.calculate(quartNumber1, operand, Integer.parseInt(TopLabel.getText()));
         TopLabel.setText(String.valueOf(result));
         equalsClicked = true;
@@ -130,12 +131,14 @@ public class HelloController {
     }
 
     public void onButtonSquareClick(ActionEvent actionEvent) {
+        if (!quart){  switchToQuart();  }
         int result = Calculator.calculate(Integer.parseInt(TopLabel.getText()), "square");
         TopLabel.setText(String.valueOf(result));
         equalsClicked = true;
     }
 
     public void onButtonSqrootClick(ActionEvent actionEvent) {
+        if (!quart){  switchToQuart();  }
         int result = Calculator.calculate(Integer.parseInt(TopLabel.getText()), "sqroot");
         TopLabel.setText(String.valueOf(result));
         equalsClicked = true;
