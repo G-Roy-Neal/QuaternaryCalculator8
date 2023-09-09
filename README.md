@@ -9,6 +9,7 @@
 
 ## Additonal dependencies
   - JavaFX
+  - Gradle
   - Scene Builder
 
 ## Task distribution
@@ -21,13 +22,13 @@
 ## Meeting details
   - First meeting
     - 09/05/23, 3:30PM
-    - Dawson Vaal, Gavin Neal, Ryan Martinez, Tommy Nguyen... All attented.
+    - Dawson Vaal, Gavin Neal, Ryan Martinez, Tommy Nguyen... All attended.
     - This first meeting was great, the main focus was to get things rolling and to get
     tasks assigned to everyone. 
     
   - Second meeting
     - 09/07/23, 3:30PM
-    - Dawson Vaal, Gavin Neal, Ryan Martinez, Tommy Nguyen, Justyn Fox... All attented.
+    - Dawson Vaal, Gavin Neal, Ryan Martinez, Tommy Nguyen, Justyn Fox... All attended.
     - This second meeting was important to get the fine details refined and get things
     wrapped up before the deadline.
   
